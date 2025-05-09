@@ -63,9 +63,9 @@ class Solver(object):
                 total_norm += param_norm ** 2
         total_norm = total_norm
         print(f'{model.name} Gradient Norm Squared: {total_norm}')
-'''
-Functions for accuracy and mcc testing
-'''
+
+#Functions for accuracy and mcc testing
+
     def test_dataset(self, db='t_test'):
         self.enc.eval()
         self.clf.eval()
@@ -126,9 +126,9 @@ Functions for accuracy and mcc testing
             print(cm)
 
         return s_train_acc, s_test_acc, t_train_acc, t_test_acc
-'''
-This function trains the source-only model, so that the feature extractor and the classifier are pre-trained on the source domain
-'''
+
+#This function trains the source-only model, so that the feature extractor and the classifier are pre-trained on the source domain
+
     def src(self):
         total_iters = 0
         self.best_acc = 0
@@ -177,9 +177,9 @@ This function trains the source-only model, so that the feature extractor and th
         self.enc.load_state_dict(best_enc)
         self.clf.load_state_dict(best_clf)
 
-'''
-This function does the adversarial training on the dann model, in the following way: the pictures from the source and the target domain are sent in the feature extractor, the features are then passed on to the classifier and the domain discriminator. The classifier continues to learn the labels of the images of the source domain, while the domain discriminator has a binnary output 0 for the target domain 1 for the source domain.
-'''
+
+#This function does the adversarial training on the dann model, in the following way: the pictures from the source and the target domain are sent in the feature extractor, the features are then passed on to the classifier and the domain discriminator. The classifier continues to learn the labels of the images of the source domain, while the domain discriminator has a binnary output 0 for the target domain 1 for the source domain.
+
     def dann(self):
 
         s_iter_per_epoch = len(self.s_train_loader)

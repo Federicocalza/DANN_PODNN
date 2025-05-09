@@ -90,7 +90,7 @@ class discriminator(nn.Module):
             podnn_torch.OrthogonalLayer1D(),
             podnn_torch.ParallelLayer(self.l2),
             podnn_torch.OrthogonalLayer1D(),
-            podnn_torch.AggregationLayer(stride=2,input_dim=500),
+            podnn_torch.AggregationLayer(stride=3,input_dim=500),
             nn.Linear(in_features=podnn_torch.agg_out_dim,out_features=1),
         nn.Sigmoid())
 
