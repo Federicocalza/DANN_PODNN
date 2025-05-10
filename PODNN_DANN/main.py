@@ -106,6 +106,7 @@ if __name__ == '__main__':
     parser.add_argument('--model_path', type=str, default='./model')
     parser.add_argument('--seed', type=int, default=100)    
     parser.add_argument('--num_branches', type=int, default=10)
+    parser.add_argument('--PODNN_stride', type=ind, default=10)
     parser.add_argument('--mode', type=str, default='test', choices=['train','test'])
     parser.add_argument('--ortho_scaling', type=float, default=0.5)
     parser.add_argument('--adapt_epochs', type=int, default=350)
