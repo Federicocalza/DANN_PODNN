@@ -26,13 +26,13 @@ This repository provides code for training a DANN model with the following impro
 
 
 ❗ **Possible adaptation:**
--s2m SVHN → MNIST.
--m2s MNIST → SVHN.
--m2u  MNIST → USPS.
--u2m USPS → MNIST.
--m2mm MNIST → MNIST-M.
--sv2sd SVHN → Synthetic Digits.
--signs Syn Signs → GTRSB.
+-s2m SVHN → MNIST
+-m2s MNIST → SVHN
+-m2u  MNIST → USPS
+-u2m USPS → MNIST
+-m2mm MNIST → MNIST-M
+-sv2sd SVHN → Synthetic Digits
+-signs Syn Signs → GTRSB
 
 
 In the MNIST-M dataset the **training set** is unlabeled, while the **test set** is labeled.
