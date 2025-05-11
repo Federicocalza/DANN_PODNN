@@ -23,7 +23,7 @@ This repository provides code for training a DANN model with the following impro
 
 > ✅ **MNIST**, **USPS**, and **SVHN** are automatically downloaded by the script.  
 > ❗ **Synthetic Digits**, **Signs**, and **GTRSB** must be manually placed in the `./data/` folder.
-> **Possible adaptation:**
+> ❗ **Possible adaptation:**
 	>s2m SVHN → MNIST
 	>m2s MNIST → SVHN
 	>m2u  MNIST → USPS
