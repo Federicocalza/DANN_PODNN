@@ -23,6 +23,15 @@ This repository provides code for training a DANN model with the following impro
 
 > ✅ **MNIST**, **USPS**, and **SVHN** are automatically downloaded by the script.  
 > ❗ **Synthetic Digits**, **Signs**, and **GTRSB** must be manually placed in the `./data/` folder.
+> **Possible adaptation:**
+			-s2m SVHN → MNIST
+			-m2s MNIST → SVHN
+			-m2u  MNIST → USPS
+			-u2m USPS → MNIST
+			-m2mm MNIST → MNIST-M
+			-sv2sd SVHN → Synthetic Digits
+			-signs Syn Signs → GTRSB
+
 
 The **training set** is unlabeled, while the **test set** is labeled.
 
@@ -45,6 +54,7 @@ The **training set** is unlabeled, while the **test set** is labeled.
 | `--mode`             | str     | `test`         | Choose whether to `train` or `test` the model. |
 | `--ortho_scaling`    | float   | `0.5`          | Not currently active. Can be used to scale orthogonality regularization. |
 | `--debug`            | bool    | `False`        | Enables debug mode in case of runtime errors. |
+
 
 ## 🚀 Usage examples
 
