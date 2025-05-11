@@ -24,13 +24,13 @@ This repository provides code for training a DANN model with the following impro
 > ✅ **MNIST**, **USPS**, and **SVHN** are automatically downloaded by the script.  
 > ❗ **Synthetic Digits**, **Signs**, and **GTRSB** must be manually placed in the `./data/` folder.
 > **Possible adaptation:**
-			-s2m SVHN → MNIST
-			-m2s MNIST → SVHN
-			-m2u  MNIST → USPS
-			-u2m USPS → MNIST
-			-m2mm MNIST → MNIST-M
-			-sv2sd SVHN → Synthetic Digits
-			-signs Syn Signs → GTRSB
+	>s2m SVHN → MNIST
+	>m2s MNIST → SVHN
+	>m2u  MNIST → USPS
+	>u2m USPS → MNIST
+	>m2mm MNIST → MNIST-M
+	>sv2sd SVHN → Synthetic Digits
+	>signs Syn Signs → GTRSB
 
 
 The **training set** is unlabeled, while the **test set** is labeled.
