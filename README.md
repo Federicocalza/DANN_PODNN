@@ -75,21 +75,6 @@ python main.py --method dann --dset s2m --num_branches 15 --PODNN_stride 5 --mod
 python main.py --dset s2m --mode test
 ```
 
-## 📁 Project structure
-
-```
-DANN_PODNN/
-├── data/                # Datasets
-├── model/               # Saved model checkpoints
-├── utils/               # Utility functions
-├── main.py              # Main script
-├── README.md            # This file
-```
-
-## 📋 License
-
-Distributed under the MIT License.
-
 ## 🙋‍♂️ Contact
 
 Created by [Federico Calza](https://github.com/Federicocalza)
